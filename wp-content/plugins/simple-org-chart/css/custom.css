@@ -1,0 +1,184 @@
+
+/* general */
+.clear {
+    clear: both;
+}
+
+/* Header */
+.brand{
+    color 				: #E05E00 !important;
+    font-family 		: georgia;
+    font-style 			: italic;
+}
+
+/* list stuff */
+#org{
+    background-color 	: white;
+    margin 				: 10px;
+    padding 			: 10px;
+}
+
+#show-list{
+    cursor 				: pointer;
+}
+
+
+
+/* Custom chart styling */
+.jOrgChart {
+    margin                : 10px;
+    padding               : 20px;
+}
+
+/* Custom node styling */
+.jOrgChart .node {  position: relative;
+    box-shadow: 0 0px 4px 1px #ABA7A7;
+    font-size: 14px;
+    background-color: #FFFFFF;
+    border: 0px solid white;
+    color: #404040;
+}
+.node p{
+    font-family 	: tahoma;
+    font-size 		: 10px;
+    line-height 	: 11px;
+    padding 		: 2px;
+}
+
+
+.jOrgChart small {
+
+    font-style: italic;
+    clear: both;
+    display: block;
+}
+
+
+.jOrgChart .node a {
+    text-decoration: none;
+    color: inherit;
+    box-shadow: 0 0px 0 0 currentColor;
+}
+
+
+.jOrgChart .overlay1 {
+    z-index: 9999999;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+.jOrgChart .overlay1:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.jOrgChart .popup1 {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 0;
+    width: 300px;
+    position: relative;
+    transition: all 1s ease-in-out;
+    text-align: left;
+}
+
+.jOrgChart .popup1 h2 {
+    margin-top: 0;
+    color: #333;
+    font-family: Tahoma, Arial, sans-serif;
+}
+.jOrgChart .popup1 .close1 {
+    line-height: 1;
+    position: absolute;
+    bottom: -20px;
+    right: 0;
+    transition: all 2ms;
+    font-size: 23px;
+    font-weight: normal;
+    text-decoration: none !important;
+    color: #ffffff;
+    box-shadow: 0 0 0;
+}
+.jOrgChart .popup1 .close1:hover {
+    color: #06D85F;
+}
+.jOrgChart .popup1 .content1 {
+    max-height: 30%;
+    overflow: auto;
+}
+
+@media screen and (max-width: 700px){
+
+    .jOrgChart .popup1{
+        width: 70%;
+    }
+}
+
+.chart_saved {
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+
+}
+
+.chart_saved span {
+    border-radius: 4px;
+    background: #fff;
+    width: 200px;
+    text-align: center;
+    margin: 50vh auto;
+    position: relative;
+    display: block;
+    padding: 10px;
+    font-size: 17px;
+}
+
+
+span.oblock {
+    line-height: 1.5;
+    display: block;
+    font-size: 20px;
+    margin: 20px 0;
+    background: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.jOrgChart .close {
+    position: absolute;
+    right: -30px;
+    top: 0;
+    width: 32px;
+    height: 32px;
+    opacity: 0.3;
+    text-indent: -9999px;
+}
+.jOrgChart .close:hover {
+    opacity: 1;
+}
+.jOrgChart .close:before, .close:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 15px;
+    width: 2px;
+    background-color: #333;
+}
+.jOrgChart .close:before {
+    transform: rotate(45deg);
+}
+.jOrgChart .close:after {
+    transform: rotate(-45deg);
+}

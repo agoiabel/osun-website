@@ -1,0 +1,93 @@
+
+
+.eh-shadow{
+    box-shadow: 1px 2px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+@media only screen and (min-width: 1025px){
+header.fixed_hiding.centered_logo.fixed_hiding:not(.scrolled) .header_inner_left {
+    height: 149px;
+}
+}
+
+@media only screen and (min-width: 1000px){
+.header_bottom {
+    padding: 0px;
+}
+header.fixed_hiding .q_logo a{
+    height:120px!important;
+}
+
+header.fixed_hiding .q_logo a, header.fixed_hiding .q_logo{
+max-height:120px;
+}
+}
+
+.qbutton.big_large_full_width{
+    box-sizing:border-box!important;
+}
+
+.header_bottom{ 
+   border-top:8px solid #94774B;
+}
+
+.cf7_custom_style_1 input.wpcf7-form-control.wpcf7-submit{
+   margin-top:11px;
+}
+
+div.wpcf7-response-output.wpcf7-validation-errors {
+    background-color: #94774B;
+}
+
+.qode_video_box .qode_video_image .qode_video_box_button_arrow {
+    position: absolute;
+    left: 53%;
+}
+
+header.fixed_hiding.scrolled .holeder_for_hidden_menu{
+    background-color: #233faa;
+}
+
+.footer_top .widget_nav_menu ul li{
+    padding: 0 0;
+}
+
+@media only screen and (max-width: 768px){
+    .qbutton{
+        padding: 0 40px;
+    }
+}
+
+@media only screen and (min-width: 1025px){
+.title_outer{
+ padding-top:97px;   
+}
+}
+
+.qode-btn-simple .qode-btn-text{
+    text-decoration:underline;
+    text-underline-position: under;
+}
+
+@media only screen and (max-width: 600px){
+.title .subtitle {
+    font-size: 14px;
+    line-height: 18px;
+}
+}
+
+.q_counter_holder.boxed_counter {
+    padding: 20px 0px;
+    background-color: transparent;
+}
+
+.page_not_found p {
+    margin: 15px 15% 35px;
+    font-family: 'Lora', sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.page_not_found h2 {
+    margin: 110px 0 20px;
+}
